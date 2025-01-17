@@ -1,0 +1,53 @@
+.add-friend {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.add-friend h3{
+    font-size: 1.5rem;
+  
+
+}
+
+
+.add-friend-form {
+    
+    display: flex;
+    background-color: #201e2b;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+
+
+.input-add-friend {
+    width: 85%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none; 
+
+    color: white;
+}
+
+
+
+.button-add-friend {
+    width: 15%;
+    border: none;
+    height: 60%;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #42305b;
+    color: gray;
+    transition: background-color 0.3s;
+    
+
+}
+
+.button-add-friend:hover {
+    background-color: #5d4387;
+
+}

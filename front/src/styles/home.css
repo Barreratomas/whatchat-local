@@ -1,0 +1,20 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+  }
+  
+
+
+  .content-home {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-info {
+    font-size: 2rem;
+    color: #5c5959;
+  }
+  

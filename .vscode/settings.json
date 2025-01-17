@@ -1,0 +1,22 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "b88igairtnenj1fddoei-postgresql.services.clever-cloud.com",
+            "port": 50013,
+            "driver": "PostgreSQL",
+            "name": "CleverCloudDB",
+            "database": "b88igairtnenj1fddoei",
+            "username": "ufl2kecjnzcdveilpksx"
+        }
+    ],
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./back",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true
+}

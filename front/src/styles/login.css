@@ -1,0 +1,132 @@
+/* Estilos Generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.password-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  width: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1; /* Asegura que el ícono esté por encima del input */
+  background-color: #333;
+}
+
+/* Contenedor del login */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del formulario */
+.form-container {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los Inputs */
+.form-control {
+  background-color: #333;
+  border: 1px solid #555;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+/* Estilo para autocompletado (en Chrome y Webkit) */
+.form-control:-webkit-autofill {
+  background-color: #333 !important; /* Asegura que el fondo sea el mismo */
+  color: #fff !important;  /* Asegura que el texto sea blanco */
+  -webkit-text-fill-color: #fff !important; 
+  caret-color: #ffffff; 
+  box-shadow: 0 0 0px 1000px #333 inset !important; /* Asegura que el fondo no se cambie */
+
+}
+
+/* Estilo para autocompletado cuando el campo tiene foco */
+.form-control:-webkit-autofill:focus {
+  background-color: #333 !important;
+  color: white !important;
+  border-color: #555 !important; 
+}
+
+/* Asegurar que el fondo no cambie al hacer autofill */
+input:-webkit-autofill {
+  background-color: #333 !important;  /* Fondo oscuro */
+  color: #fff !important;  /* Texto blanco */
+  box-shadow: 0 0 0px 1000px #333 inset !important;
+  -webkit-text-fill-color: #fff !important;  /* Asegura que el texto sea blanco */
+}
+
+/* Estilo de placeholder */
+::placeholder {
+  color: #bbb; /* Color de los placeholders */
+}
+
+/* Estilo para cuando el input tiene foco */
+.form-control:focus {
+  background-color: #333;
+  border-color: #555;
+  color: white;
+  outline: none;
+  box-shadow: 0 0 12px 3px rgba(98, 0, 234, 0.6);
+}
+
+/* Estilos para botones */
+.register-btn {
+  background-color: #fcfcfc00;
+  border: none;
+  color: white;
+}
+
+/* Estilos para botones de clase .btn-primary */
+.btn-primary {
+  background-color: #6200ea;
+  border-color: #6200ea;
+}
+
+.btn-primary:hover {
+  background-color: #3700b3;
+  border-color: #3700b3;
+}
+
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.5rem; /* Reduce el tamaño de fuente en pantallas más pequeñas */
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+}

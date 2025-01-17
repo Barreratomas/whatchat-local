@@ -1,0 +1,81 @@
+/* Fondo oscuro y transparente */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    backdrop-filter: blur(3px); /* Aplica el desenfoque */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Contenido del modal */
+  .modal-content {
+    background-color: #38324c;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px; /* Tamaño máximo del modal */
+    box-shadow: 0 4px 10px rgba(37, 38, 59, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease-out;
+  }
+  
+  /* Título del modal */
+  .modal-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+    text-align: center;
+  }
+  .modal-content p {
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+    text-align: center;
+  }
+  /* Estilo para el input */
+  .modal-content input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+  }
+
+  
+  /* Estilo para los botones de acción */
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Botón guardar */
+  .modal-actions button {
+    background-color: #251944;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .modal-actions button:hover {
+    background-color: #1a0e39;
+  }
+  
+
+  

@@ -1,0 +1,51 @@
+
+
+.pending-content h3 {
+    font-size: 1.5rem;
+}
+
+.pending-requests {
+    display: flex;
+    flex-direction: column;
+}
+
+.pending-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: auto;
+    border-bottom: 1px solid #1d1b29;
+    border-radius: 5px;
+
+}
+
+.pending-user p {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.pending-options {
+    display: flex;
+
+}
+
+.pending-options div {
+
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+.no-pending-content {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.no-pending {
+    font-size: 1rem;
+    color: #5c5959;
+}
