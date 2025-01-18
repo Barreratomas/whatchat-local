@@ -1,0 +1,15 @@
+[phases]
+# Instalar dependencias de Django (backend)
+install_backend = "pip install -r back/requirements.txt"
+
+# Instalar dependencias de React (frontend)
+install_frontend = "cd front && npm install"
+
+# Construir el frontend
+build_frontend = "cd front && npm run build"
+
+# Preparar archivos estáticos para Django (opcional)
+collect_static = "cd back && python manage.py collectstatic --noinput"
+
+# Iniciar el servidor de Django
+start = "cd back && python manage.py runserver 0.0.0.0:8000"
