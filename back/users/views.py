@@ -5,6 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.db import transaction
 from django.db.models import Q
 from django.shortcuts import get_object_or_404
+from django.http import Http404
 
 import json
 
@@ -225,7 +226,10 @@ def send_friend_request(request):
         from_user = get_object_or_404(User, email=from_user_email)
 
         # Validar el usuario destino
-        to_user = get_object_or_404(User, username=to_username)
+        try:
+            to_user = get_object_or_404(User, username=to_username)
+        except Http404:
+            return JsonResponse({"error": ("No se encontró un usuario con ese nombre de usuario.")}, status=404)
 
         # Verificar si ya existe una solicitud de amistad rechazada o revocada
         existing_request = FriendRequest.objects.filter(
