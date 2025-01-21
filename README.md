@@ -29,7 +29,7 @@ Whatchat permite  a los usuarios comunicarse fácil y rápidamente. Ofrece opcio
 ---
 ## **Preparar django:**
 - Abre una terminal.
-- Navega al back desde el directorio raiz del proyecto..
+- Navega al back desde el directorio raiz del proyecto:
 ```
 cd back
 ```
@@ -60,7 +60,7 @@ Ir a Docker desktop, ingresar a containers y Iniciar el container llamado redis
 --- 
 ## **Preparar React:**
 - Abre una terminal.
-- Navega al front desde el directorio raiz del proyecto.
+- Navega al front desde el directorio raiz del proyecto:
 ```
 cd front
 ```
