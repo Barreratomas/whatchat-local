@@ -54,7 +54,7 @@ Ejecuta en la consola
 ```
 docker run -d --name redis -p 6379:6379 redis
 ```
-Ir a Docker desktop, ingresar a containers y Iniciar el container llamado redis
+Ir a Docker desktop, ingresar a containers e iniciar el container llamado redis
 
 
 --- 
