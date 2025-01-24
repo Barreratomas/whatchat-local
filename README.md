@@ -5,9 +5,9 @@ Whatchat permite  a los usuarios comunicarse fácil y rápidamente. Ofrece opcio
 
 ---
 
-## ***Características Principales:***
+# ****Características Principales:****
 
-## ***Gestión de usuarios:***
+## ****Gestión de usuarios:****
 - Registro e inicio de sesión seguro.
  
 ## ****Sistema de amigos:****
